@@ -1,0 +1,75 @@
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+*::selection {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body .welcome {
+    font-size: 34px;
+    text-align: center;
+    margin: 15px;
+}
+
+body .nav nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+body .nav nav ul a {
+    margin: 25px;
+    text-decoration: none;
+    transition: .2s;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+body .nav nav ul a:hover {
+    border-bottom: 2px solid white;
+}
+
+.background {
+    background-size: cover;
+    width: 120%;
+    height: 120%;
+}
+
+.home-main-content {
+    background-image: url('1.jpg');
+}
+
+.about-page-header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.about-description {
+    margin: 0px -45px 0px 45px;
+    padding: 10px;
+    border: 3px 0px 3px 3px solid #222;
+    border-radius: 4px;
+    padding-right: -50px;
+}
+
+h2 {
+    margin: 0px -45px 0px 45px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 50px;
+    z-index: -1;
+}
