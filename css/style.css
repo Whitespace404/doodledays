@@ -1,25 +1,30 @@
 * {
-    font-family: Poppins, sans-serif;
+    font-family: 'Quicksand', Poppins, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    transition: .2s;
 }
 
 *::selection {
     background-color: #fff !important;
-    color: #000 !important;
+    color: #3898ff !important;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth; }
+h2 {margin: 0px -45px 0px 45px; }
+footer {text-align: center; }
 
 body .welcome {
-    font-size: 34px;
+    font-size: 3rem;
     text-align: center;
     margin: 15px;
+}
+
+.left img {
+    margin-left: 45em;
 }
 
 body .nav nav ul {
@@ -33,11 +38,11 @@ body .nav nav ul a {
     text-decoration: none;
     transition: .2s;
     padding: 5px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 body .nav nav ul a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 
 .background {
@@ -46,8 +51,9 @@ body .nav nav ul a:hover {
     height: 120%;
 }
 
-.home-main-content {
-    background-image: url('1.jpg');
+.about-main-content .about-page-header {
+    text-align: center;
+    margin: 25px;
 }
 
 .about-page-header {
@@ -64,12 +70,69 @@ body .nav nav ul a:hover {
     padding-right: -50px;
 }
 
-h2 {
-    margin: 0px -45px 0px 45px;
-}
+
 
 .video-container {
     text-align: center;
     margin: 50px;
     z-index: -1;
+}
+
+.about-main-content article p {
+    font-family: 'Quicksand';
+    line-height: 1.8em;
+}
+
+.about-main-content article {
+    margin: 25px;
+    max-width: 60ch;
+    font-size: 1.3em;
+}
+
+.about-main-content .about {
+    display: flex;
+}
+
+aside img {
+    margin: 25px;
+    border-radius: 100%;
+}
+
+.youtube {
+    color: white;
+    text-decoration: none;
+    padding: 2em;
+    margin: 30px;
+    background-color: black;
+    text-align: center;
+}
+
+.youtube:hover + span {
+    visibility: visible;
+    color: white;
+    background: black;
+}
+
+span {
+    background: black;
+    visibility: hidden;
+}
+
+footer {
+    padding: 2em;
+    background-color: black;
+    color: white;
+}
+
+.team {
+    display: flex;
+    padding: 3em;
+}
+
+.team p {
+    max-width: 45ch;
+}
+
+.team-img {
+    border-radius: 50%;
 }
