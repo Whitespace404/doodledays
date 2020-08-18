@@ -1,5 +1,9 @@
+html {scroll-behavior: smooth; }
+h2 {margin: 0px -45px 0px 45px; }
+footer {text-align: center; }
+
 * {
-    font-family: 'Quicksand', Poppins, sans-serif;
+    font-family: 'Quicksand', Poppins, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,12 +17,12 @@
     color: #3898ff !important;
 }
 
-html {scroll-behavior: smooth; }
-h2 {margin: 0px -45px 0px 45px; }
-footer {text-align: center; }
+:root {
+    --primary-color: #3a4052;
+}
 
 body .welcome {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     margin: 15px;
 }
@@ -29,20 +33,22 @@ body .welcome {
 
 body .nav nav ul {
     display: flex;
-    justify-content: space-around;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
 body .nav nav ul a {
     margin: 25px;
     text-decoration: none;
-    transition: .2s;
     padding: 5px;
     border-bottom: 2px solid white;
 }
 
 body .nav nav ul a:hover {
     border-bottom: 2px solid black;
+    font-size: 1.1em;
 }
 
 .background {
@@ -62,23 +68,13 @@ body .nav nav ul a:hover {
     margin-bottom: 50px;
 }
 
-.about-description {
-    margin: 0px -45px 0px 45px;
-    padding: 10px;
-    border: 3px 0px 3px 3px solid #222;
-    border-radius: 4px;
-    padding-right: -50px;
-}
-
-
-
 .video-container {
     text-align: center;
     margin: 50px;
     z-index: -1;
 }
 
-.about-main-content article p {
+.about-main-content p {
     font-family: 'Quicksand';
     line-height: 1.8em;
 }
@@ -124,15 +120,78 @@ footer {
     color: white;
 }
 
+.team p {
+    line-height: 1.8em;
+}
+
 .team {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
-    padding: 3em;
+}
+
+.team img {
+    width: 25%;
+    height: 25%;
+    margin-left: 2em;
 }
 
 .team p {
-    max-width: 45ch;
+    max-width: 40ch;
+    padding: 1em;
+    margin-left: 2em;
 }
 
-.team-img {
-    border-radius: 50%;
+.team {
+    margin-top: 3em;
+}
+
+.left img {
+    margin-left: 40em;
+}
+
+.videos {
+    text-align: center;
+}
+
+.videos iframe {
+    margin: 20px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.what-to-expect {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.what-to-expect ul {
+    list-style: none;
+    background: #000;
+}
+
+.what-to-expect li {
+    padding: 1em;
+    font-family: 'Poppins', Poppins;
+    font-weight: 500;
+    font-size: 3em;
+}
+
+.what-to-expect li:hover {
+    background-color: #000;
+    color: white;
 }
