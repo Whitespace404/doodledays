@@ -13,8 +13,8 @@ footer {text-align: center; }
 }
 
 *::selection {
-    background-color: #fff !important;
-    color: #3898ff !important;
+    background-color: #fff;
+    color: #3898ff;
 }
 
 :root {
