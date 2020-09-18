@@ -8,8 +8,8 @@ footer {text-align: center; }
     padding: 0;
     box-sizing: border-box;
     background-color: white;
-    color: black;
-    transition: .2s;
+    color: #525252;
+    transition: .5s;
 }
 
 *::selection {
@@ -17,14 +17,22 @@ footer {text-align: center; }
     color: #3898ff;
 }
 
+*:focus {
+    color: red;
+    transform: scale(1.1);
+}
+
 :root {
     --primary-color: #3a4052;
 }
 
 body .welcome {
-    font-size: 3.5rem;
     text-align: center;
     margin: 15px;
+
+    box-sizing: content-box;
+    font-size: 3.5rem;
+    color: black;
 }
 
 .left img {
@@ -37,6 +45,10 @@ body .nav nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+
+strong {
+    color: inherit;
 }
 
 body .nav nav ul a {
@@ -173,7 +185,6 @@ h1 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-
     text-align: center;
     align-items: center;
     justify-content: center;
