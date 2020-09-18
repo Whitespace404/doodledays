@@ -29,7 +29,6 @@ footer {text-align: center; }
 body .welcome {
     text-align: center;
     margin: 15px;
-
     box-sizing: content-box;
     font-size: 3.5rem;
     color: black;
@@ -89,6 +88,9 @@ body .nav nav ul a:hover {
 .about-main-content p {
     font-family: 'Quicksand';
     line-height: 1.8em;
+    animation-name: loading;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
 }
 
 .about-main-content article {
@@ -153,6 +155,7 @@ footer {
 .team p {
     max-width: 40ch;
     padding: 1em;
+    font-weight: 600;
     margin-left: 2em;
 }
 
@@ -205,4 +208,13 @@ h1 {
 .what-to-expect li:hover {
     background-color: #000;
     color: white;
+}
+
+@keyframes loading {
+    from {
+        line-height: 3em;
+    }
+    to {
+        line-height: 1.8em;
+    }
 }
