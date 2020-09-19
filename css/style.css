@@ -1,29 +1,19 @@
 html {scroll-behavior: smooth; }
 h2 {margin: 0px -45px 0px 45px; }
 footer {text-align: center; }
+*:focus { outline: none; }
 
 * {
     font-family: 'Quicksand', Poppins, Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     box-sizing: border-box;
     background-color: white;
-    color: #525252;
-    transition: .5s;
+    transition: .2s;
 }
 
 *::selection {
     background-color: #fff;
     color: #3898ff;
-}
-
-*:focus {
-    color: red;
-    transform: scale(1.01);
-}
-
-:root {
-    --primary-color: #3a4052;
 }
 
 body .welcome {
@@ -50,16 +40,18 @@ strong {
     color: inherit;
 }
 
-body .nav nav ul a {
+.nav a {
     margin: 25px;
     text-decoration: none;
     padding: 5px;
     border-bottom: 2px solid white;
+    color: black;
 }
 
-body .nav nav ul a:hover {
+.nav a:hover {
     border-bottom: 2px solid black;
-    font-size: 1.1em;
+    transform: scale(1.2);
+    color: black;
 }
 
 .background {
@@ -188,6 +180,7 @@ h1 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    
     text-align: center;
     align-items: center;
     justify-content: center;
