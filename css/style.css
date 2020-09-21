@@ -1,6 +1,5 @@
 html {scroll-behavior: smooth; }
 h2 {margin: 0px -45px 0px 45px; }
-footer {text-align: center; }
 *:focus { outline: none; }
 
 * {
@@ -16,9 +15,10 @@ footer {text-align: center; }
     color: #3898ff;
 }
 
-body .welcome {
+h1.welcome {
     text-align: center;
     margin: 15px;
+    font-weight: 500;
     box-sizing: content-box;
     font-size: 3.5rem;
     color: black;
@@ -34,6 +34,7 @@ body .nav nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
+    font-weight: 400;
 }
 
 strong {
@@ -175,10 +176,6 @@ h1 {
 }
 
 .what-to-expect {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
 
     text-align: center;
@@ -197,6 +194,7 @@ h1 {
     font-weight: 500;
     font-size: 3em;
     transition: .3s ease-in;
+    z-index: -10;
 }
 
 li::selection {
