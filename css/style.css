@@ -193,8 +193,7 @@ h1 {
     font-family: 'Poppins', Poppins;
     font-weight: 500;
     font-size: 3em;
-    transition: .3s ease-in;
-    z-index: -10;
+    transition: .3s ease;
 }
 
 li::selection {
@@ -203,9 +202,11 @@ li::selection {
 }
 
 .what-to-expect li:hover {
+    border-radius: 10vh;
+    z-index: -100;
     background-color: #000;
     color: white;
-    transform: scale(1.09);
+    transform: scale(1.07);
 }
 
 .ideas-form {
