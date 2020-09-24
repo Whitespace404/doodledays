@@ -231,16 +231,19 @@ li::selection {
     }
 }
 
-/* ? This media query is for people who prefer less motion and movement and animations. 
-    * Thanks to web.dev for recommending this.*/
+/*  * This media query is for people who prefer less
+    * motion and movement and animations. 
+    * Thanks to web.dev for recommending this.
+    * View article at https://web.dev/prefers-reduced-motion/    
+*/
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
       animation-delay: -1ms !important;
-      animation-duration: 0ms !important;
-      animation-iteration-count: 1 !important;
-      background-attachment: initial !important;
       scroll-behavior: auto !important;
       transition-duration: 0s !important;
       transition-delay: 0s !important;
+      animation-duration: 0ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
     }
-  }
+}
